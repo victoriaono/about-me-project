@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Introduction</title>
+<link rel="stylesheet" href="CSS/formatting.css">
+<style>
+/* Background images */
+
+.bgimg-1 {
+	background-image: url("images/IMG_4160.jpg");
+	min-height: 100%;
+}
+.bgimg-2 {
+	background-image: url("images/newyork.jpg");
+	min-height: 400px;
+}
+.bgimg-3 {
+	background-image: url("images/DSC_0155.jpg");
+	min-height: 400px;
+}
+h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: normal;
+	color: #964f73;
+}
+table,th,td {
+	border: 1px solid #79535d;
+	border-collapse: collapse;
+	padding: 8px;
+	text-align: center;
+}
+td ul {
+	list-style-type: none;
+	line-height: 25px;
+	padding-left: 0;
+}
+td ul li {
+	padding-left: -5px; /* Makes space for the icon */
+}
+/* Different bullet icons for each list */
+td ul.songs li:before {
+	content: "\266A";
+	padding-right: 5px;
+}
+td ul.books li:before {
+	content: "\270F";
+	padding-right: 5px;
+}
+td ul.movies li:before {
+	content: "\2729";
+	padding-right: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+	<ul>
+	<a class="name" href="index.html">Victoria&#9753;</a>
+		<li><a href="index.html" class="active">About</a></li>
+		<li><a href="hobbies.html">Hobbies</a></li>
+		<li class="dropdown">
+    	<a href="#" class="drop">Favorite Cities</a>
+    		<div class="cities">
+      			<a id="osaka" href="osaka.html">Osaka</a>
+      			<a id="nyc" href="newyorkcity.html">New York</a>
+      			<a id="rome" href="rome.html">Rome</a>
+    		</div>
+  		</li>
+		<li><a href="goals.html">Goals</a></li>
+	</ul>
+</div>
+
+<div class="sidenav">
+  <a href="#life_in_japan" class="first">Japan</a>
+  <a href="#life_in_ny" class="second">New York</a>
+  <a href="#future" class="third">Future</a>
+</div>
+
+<div class="bgimg-1">
+	<div class="caption">
+		<span class="box">About me</span>
+	</div>
+</div>
+
+<!-- Part 1 about life in Osaka -->
+<a id="life_in_japan"><div class="pt1"></a>
+	<h3 style="text-align:center;">Life in Japan</h3>
+	<p><span class="first_letter">I</span> was born in a concrete jungle in <!-- Link to my Osaka page --><a href="Osaka.html">Osaka</a>, Japan. As an only child, my mother brought me up teaching me a variety of lessons.	Ever since I was little, I immersed myself in arts: ballet from age 3 and piano from age 5. Ballet was, and is, my life. I went to lessons 6 times a week, performed in two recitals every year, and danced two different variations. Piano was more of a <!-- Link to my hobbies page --><a href="hobbies.html">hobby</a> to me, but I learned to play a waltz by Chopin, which became my ultimate favorite and a special piece of my life. I would also play duets with my mom, which remains one of my best memories. <br>My mom introduced me to western music, especially songs from the '80s and musicals. I would sing them in car rides not knowing the meanings of the lyrics. At 7 years old, I was obsessed with <i>West Side Story</i>.</p>
+	<!-- Pics of ballet -->
+	<div class="photos">
+		<img src="images/balletlesson.jpg" alt="ballet lesson">
+		<img src="images/ballet.jpg" alt="ballet variation">
+		<img src="images/IMG_4105.jpg" alt="ballet rehearsal">
+	</div>
+	<p class="first_line">While my mother taught me arts, my father read to me and taught me academics, especially math. I grew up loving math and science. We would all go to a science museum with a planetarium, or take a road trip to stargaze and name the stars or to observe a solar eclipse. By second grade, I was able to solve middle school level math and calculate large numbers in my head quickly. In 4th grade, I placed first in a countrywide academic test in Japan.</p>
+	<!-- Photos of me in school -->
+	<!-- Put into a list so the images are aligned with captions appearing on hover -->
+	<ul class="image-list">
+	(hover over!)<br>
+		<li>
+			<img src="images/IMG_0513.jpg" alt="family">
+			<span class="imgCaption">My family and I at a vacation</span>
+		</li>
+		<li>
+			<img src="images/CIMG1986.jpg" alt="classroom">
+			<span class="imgCaption">Classroom in Japan (spot me?)</span>
+		</li>
+		<li>
+			<img src="images/IMG_0535.jpg" alt="little me">
+			<span class="imgCaption">Japanese-style performance in kindergarten</span>
+		</li>
+	</ul>
+	<p class="first_line">In 2009, my dream then came true. I received a puppy for my birthday present, and we named her <b>Marie Antoinette</b>. She was tiny, graceful but clumsy, and often jealous, but I adored her. Because I did not have any siblings, she was my sister and my treasure.</p>
+	<!-- Photos of my puppy -->
+	<div class="photos">
+		<img src="images/puppy.jpg" alt="puppy sleeping">
+		<img src="images/CIMG2359.jpg" alt="puppy playing">
+		<img src="images/CIMG1802.jpg" alt="my puppy and I">
+	</div>
+	<p class="first_line"><img src="images/englishlesson.png" alt="English lesson" class="float_right" width="25%" height="25%">My mom had taught me a bit of English since I was little. Although I knew some simple vocabulary, that was not even close to survive a minute without help in the United States.</p>
+</div>
+
+<a id="life_in_ny"><div class="bgimg-2"></a>
+	<div class="caption">
+		<h2>New York</h2>
+	</div>
+</div>
+
+<!-- Part 2 about moving to New York -->
+<div class="pt2">
+	<p><img src="images/CIMG9955.jpg" alt="me in midtown" width="25%" height="25%" class="float_left"><span class="first_letter">S</span>ummer of 2011.<br>It was just me and my mom and my dog in the middle of Manhattan. Having lost my father and leaving my grandparents behind, we were lost ourselves.<br>I entered 5th grade and soon graduated. I was able to befriend people of different ethnicities that I had never seen before, and be a part of a school musical which I had <i>never</i> dreamed of. I still had my language barrier, but I advanced to an honors math class in middle school without knowing that I did. At the end of 8th grade, I received a medal for having the highest math average in class.<img src="images/graduation.jpg" alt="8th grade graduation" width="20%" height="20%" class="float_right"></p><br>
+	<p class="first_line">I knew that I had to go to a good high school. I learned of the SHSAT and decided that a specialized high school was where I needed to go. Many of my friends took it as well, and a lot of them were accepted into <!-- Link to school website --><a href="http://www.bxscience.edu" target="_blank">Bronx Science</a>, including myself. <br>By this point, I had almost no trouble with English. Most of my friends and teachers did not even realize that I was a non-native speaker.<br>At Bronx Science, I joined the speech and debate team. I was a quarterfinalist at a tournament at University of Pennsylvania last year.</p>
+	<!-- Text color a bit hard to see -->
+	<h3 style="text-shadow:0px 0px 3px #000;">What I like to do</h3>
+	<p>I spend time engaging in activities to have fun and also further improve my English, mainly through reading, listening to music, and watching movies. Here are some of my favorites&#8628;</p>
+	<!-- Table of my favorite things -->
+	<table>
+	<tr>
+		<th>Music</th>
+		<th>Books</th>
+		<th>Movies/TV Shows</th>
+	</tr>
+	<tr>
+		<td>
+			<ul class="songs">
+				<li>&ldquo;Burn&rdquo; from <i>Hamilton</i></li>
+				<li>&ldquo;Out of the Woods&rdquo; by Taylor Swift</li>
+				<li>&ldquo;Strange Birds&rdquo; by Birdy</li>
+				<li>&ldquo;River of Tears&rdquo; by Alessia Cara</li>
+			</ul>
+		</td>
+		<td>
+			<ul class="books">
+				<li><i>Throne of Glass</i> series by Sarah J. Maas</li>
+				<li><i>The Infernal Devices</i> trilogy by Cassandra Clare</li>
+				<li><i>Vicious</i> by V.E. Schwab</li>
+				<li><i>I'll Give You the Sun</i> by Jandy Nelson</li>
+			</ul>
+		</td>
+		<td>
+			<ul class="movies">
+				<li><i>Titanic</i></li>
+				<li><i>West Side Story</i></li>
+				<li><i>Friends</i></li>
+				<li><i>Stranger Things</i></li>
+	</tr>
+</table>
+</div>
+
+<a id="future"><div class="bgimg-3"></a>
+	<div class="caption">
+		<h2>Future</h2>
+	</div>
+</div>
+
+<!-- Part three about hopes and dreams -->
+<div class="pt3">
+	<p><span class="first_letter">F</span>ive and a half years have passed since I came to New York. I still need development in my writing, and there are many words that I still do not understand when I am reading a text in English or history class.<br>But I believe that, because I succeeded despite my language barrier and family struggles, I can overcome anything.<br>I want to go to a good college and make my father proud. I know he is always looking after me somewhere, encouraging me to continue studying as he had always taught me.<br>But I want my mother to be proud even more. Everyday she encourages me and makes sure I am on the right track. I want to succeed for her.<br>But that is not to say that I am trying to succeed merely for others. Most importantly, I want to succeed for myself. I have gone through some tough experiences, but that has not let me down. I want to achieve to my best ability so that I can be proud of myself.</p>
+	<h3>My Future</h3>
+	<p>I have no idea what I want to be in the future yet. But I still have time, and right now, I am constantly challenging myself to see what I am capable of doing.<br>However, I do have a few small dreams for the future. I want to travel around the world and see all the historical elements I have learned in the past few years. I also want a nice apartment in the city with enough space to put a grand piano. And a puppy.</p>
+</div>
+
+<!-- Goes back to first image for a wrapping effect -->
+<div class="bgimg-1">
+	<div class="caption">
+		<span class="box" style="font-family:Alex Brush;text-transform:none;">Thanks for reading!</span>
+	</div>
+</div>
+
+</body>
+</html>

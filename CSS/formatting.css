@@ -1,0 +1,370 @@
+/* Fonts */
+@font-face {
+	font-family: Alex Brush;
+	src: url(AlexBrush-Regular.ttf);
+}
+@font-face {
+	font-family: Great Vibes;
+	src: url(GreatVibes-Regular.otf);
+}
+@font-face {
+	font-family: Quattrocento Sans;
+	src: url(QuattrocentoSans-Regular.otf);
+}
+
+/* Style for links */
+a:link {
+ 	text-decoration: underline;
+ 	color: #da7194;
+}
+a:visited {
+	color: #666699;
+}
+a:hover {
+	text-decoration: overline;
+}
+a:active {
+	text-decoration: none;
+}
+
+/* Style for navigation bar */
+.topnav {
+	color: #fff;
+	font-size: 25px;
+	font-family: "Alex Brush";
+	min-width: 100%;
+	position: fixed;
+	top: 0;
+    z-index: 1;
+}
+.topnav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+/* Style for 'logo' on the nav bar */
+.name {
+	display: block;
+	position: absolute;
+	font-size: 49px;
+	font-family: "Great Vibes";
+	top: 0;
+	left: 20px;
+	text-decoration: none;
+}
+.name:link {
+	text-decoration: none;
+	color: #888;
+	text-shadow: 1px 1px 3px black;
+}
+/* Make no change even after visited */
+.name:visited {
+	text-decoration: none;
+	color: #888;
+}
+.name:hover {
+	text-decoration: none;
+}
+.topnav li {
+    display: inline-block; /* Display each item horizontally */
+}
+/* Special style for topnav links */
+.topnav li a, .drop {
+	color: white;
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+ 	-webkit-transform: perspective(1px) translateZ(0);
+  	transform: perspective(1px) translateZ(0);
+  	position: relative;
+  	overflow: hidden;
+}
+/* Animation for overline from center when hovering over content */
+.topnav li a:before {
+	content: "";
+  	position: absolute;
+  	left: 50%;
+  	right: 50%;
+  	top: 0;
+  	background: #da7194;
+  	height: 2px;
+  	-webkit-transition-property: left, right;
+  	transition-property: left, right;
+  	-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;
+  	-webkit-transition-timing-function: ease-out;
+  	transition-timing-function: ease-out;
+}
+li a:visited {
+	color: white; /* No change in color after visiting link */
+}
+/* Overline slides out */
+.topnav li a:hover:before {
+  left: 0;
+  right: 0;
+}
+li.dropdown {
+    display: inline-block;
+}
+/* Submenu for favorite cities */
+.cities {
+    display: none; /* Hidden at fisrt */
+    position: absolute;
+    min-width: 160px;
+}
+.cities a {
+    padding: 12px 16px;
+    font-size: 30px;
+    text-shadow: 0px 0px 3px black;
+    display: block;
+}
+.dropdown:hover .cities {
+    display: block; /* Show the cities menu when hover */
+}
+/* Style for background images in dropdown */
+#osaka, #nyc, #rome {
+	background-position: center;
+	background-size: 100%;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	transition: 0.8s ease;
+	-webkit-transition: 0.8s ease;
+}
+/* Image turns saturated when hover */
+#nyc:hover, #rome:hover {
+	filter: grayscale(40%);
+	-webkit-filter: grayscale(40%);
+}
+#osaka:hover {
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%); /* Original image is not as saturated */
+}
+#osaka {
+	background-image: url(https://www.abenoharukas-300.jp/images/bgslider3.jpg);
+	background-position: 50% 57%; /* Position the image a little higher than center */
+}
+#nyc {
+	background-image: url(https://www.besttours.com/media/catalog/category/NYC_2-compressor.jpg);
+}
+#rome {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg);
+}
+.active {
+	background-color: #111; /* When user is on the page, that section has a different background on topnav */
+}
+
+/* Style for side navigation bar */
+.sidenav a {
+    position: fixed;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    z-index: 10;
+}
+.sidenav a:hover {
+    left: 0; /* Bar slides out */
+}
+/* First one leaves space for the top nav bar */
+/* Each bar takes up 60px height */
+.first {
+    top: 60px;
+    background-color: #666;
+}
+.second {
+    top: 120px;
+    background-color: #666;
+}
+.third {
+    top: 180px;
+    background-color: #666;
+}
+.fourth {
+    top: 240px;
+    background-color: #666;
+}
+
+/* Style for the entire page */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 18px;
+  background-color: mistyrose; /* Add a bit of hue to background */
+}
+
+/* Style for format of the page and background images */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	position: relative;
+	opacity: 0.65;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+} 
+/* Style for the first and last heading of the page */
+.caption span.box {
+	background-color: #111;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 18px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+/* Style for the headings in each block */
+.caption h2 {
+	background-color: transparent;
+	color: #fff;
+	font-size: 28px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 6px #000;
+}
+
+/* Style for each part of the page */
+/* Each div is same but color alternates */
+.pt1, .pt3 {
+	color: #777;
+	background-color: white;
+	padding: 50px 100px;
+	text-align: justify;
+	overflow: hidden;
+}
+
+.pt2, .pt4 {
+	color: #ddd;
+	background-color: #4c343b;
+	padding: 50px 100px;
+	text-align: justify;
+	overflow: hidden;
+}
+
+/* Style for first lines in paragraphs */
+p:first-line {
+	letter-spacing: 5px;
+}
+.first_letter {
+	font-family: Alex Brush;
+	font-size: 250%;
+	color: #964f5a;
+}
+p.first_line:first-line {
+	letter-spacing: 0px; /* No letter space for subsequent paragraphs */
+}
+p {
+	line-height: 140% /* Broader space between lines in text */
+}
+
+/* Image style to float left */
+.float_left {
+	float: left;
+	margin-right: 15px;
+}
+/* Image style to float right */
+.float_right {
+	float: right;
+	margin-left: 15px;
+}
+
+/* All photos in paragraphs/table are slightly transparent */
+p img, td img {
+	opacity: 0.8;
+	transition: 0.3s ease; /* image turns opaque a little slowly */
+}
+/* When hovering over images in paragraphs and table, they turn opaque */
+p img:hover, td img:hover {
+	opacity: 1;
+}
+
+/* Line of images */
+div.photos {
+	text-align: center;
+}
+div.photos img {
+	width: 30%;
+	height: 30%;
+	margin: 0px 5px;
+	opacity: 0.8;
+	transition: 0.3s ease; /* image turns opaque a little slowly */
+}
+div.photos img:hover {
+	opacity: 1;
+}
+
+/* Style for text over image on hover in a list */
+ul.image-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+ul.image-list li {
+	display: inline-block;
+	width: 350px;
+	height: 262px; /* Same dimensions as the image */
+	position: relative;
+	margin-right: 5px;
+}
+ul.image-list li img {
+	width: 350px;
+	height: 262px;
+	opacity: 0.8;
+}
+.imgCaption {
+	position: absolute;
+	color: #fff;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 350px;
+	height: 262px;
+	background-color: rgba(0,0,0,0.4); /* Background is slightly dark to show text */
+	opacity: 0;
+	transition: 0.5s ease; /* Text shows a little slowly */
+}
+ul.image-list li:hover .imgCaption {
+	opacity: 1;
+}
+
+/* Style for hobbies and goals */
+/* Style for div around the table */
+div.table {
+	max-width: 90%;
+	margin: 80px auto;
+	padding-bottom: 20px;
+	padding-top: 2px;
+}
+table {
+	width: 90%; /* Table occupies 90% width of the div */
+	margin: 20px auto;
+}
+/* Style for div of short and long term goals */
+div.goals {
+	background-color: rgba(255,255,255,0.75);
+	margin: 0px auto;
+	margin-bottom: 60px;
+	max-width: 75%;
+	padding: 10px 50px;
+	padding-top: 5px;
+	color: #111;
+}
+h1 {
+	color: #79535d;
+	font-family: Great Vibes;
+}
